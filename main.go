@@ -44,6 +44,7 @@ func main() {
 	GetUsers()
 }
 
+// one comment added
 func CreateUser(name, email string) {
 	_, err := db.Exec(context.Background(),
 		"INSERT INTO users (name, email) VALUES ($1, $2)", name, email)
